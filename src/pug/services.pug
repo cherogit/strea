@@ -1,0 +1,120 @@
+include mixins/_breadcrumbs.pug
+
+doctype html
+html(lang="ru")
+	include includes/head.pug
+	body
+		include includes/header.pug
+		main.main
+			.container
+				+breadcrumbs(['Услуги'])
+
+				.services
+					.services__wrapper
+						.services-nav
+							.services-nav__title Физическим лицам
+							ul.services-nav__list
+								li.services-nav__list-item
+									a.services-nav__list-link._active(href="#") Взыскание долгов / ущерба
+								li.services-nav__list-item
+									a.services-nav__list-link(href="#") Гражданское право
+								li.services-nav__list-item
+									a.services-nav__list-link._popular._active(href="#") Жилищное право
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 24"><rect width="3" height="3"/><rect y="10" width="3" height="3"/><rect y="20" width="3" height="3"/></svg>
+									ul.services-nav__list-submenu.services-submenu
+										li.services-submenu__item
+											a.services-submenu__link(href="#") Выделение доли
+										li.services-submenu__item
+											a.services-submenu__link(href="#") Выселение из квартиры
+										li.services-submenu__item
+											a.services-submenu__link._active(href="#") Признание права собственности
+										li.services-submenu__item
+											a.services-submenu__link(href="#") Сделка с недвижимостью
+										li.services-submenu__item
+											a.services-submenu__link(href="#") Согласование препланировки
+								li.services-nav__list-item
+									a.services-nav__list-link(href="#") Защита прав потребителей
+								li.services-nav__list-item
+									a.services-nav__list-link(href="#") Земельное право
+								li.services-nav__list-item
+									a.services-nav__list-link(href="#") Кредитный юрист
+								li.services-nav__list-item
+									a.services-nav__list-link._popular(href="#") Наследственное право
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 24"><rect width="3" height="3"/><rect y="10" width="3" height="3"/><rect y="20" width="3" height="3"/></svg>
+								li.services-nav__list-item
+									a.services-nav__list-link._popular(href="#") Семейное право
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 24"><rect width="3" height="3"/><rect y="10" width="3" height="3"/><rect y="20" width="3" height="3"/></svg>
+								li.services-nav__list-item
+									a.services-nav__list-link(href="#") Страховое право
+								li.services-nav__list-item
+									a.services-nav__list-link._popular._active(href="#") Трудовое право
+								li.services-nav__list-item
+									a.services-nav__list-link._popular(href="#") Уголовное право
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3 24"><rect width="3" height="3"/><rect y="10" width="3" height="3"/><rect y="20" width="3" height="3"/></svg>
+								li.services-nav__list-item
+									a.services-nav__list-link(href="#") Юрист по ДТП
+							.services-nav__title Юридическим лицам
+							ul.services-nav__list
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Абонентское обслуживание
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Арбитраж
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Корпоративное право
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Ликвидация Фирмы
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Налоговое право
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Регистрация фирмы
+							.services-nav__title Другое
+							ul.services-nav__list
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Лицензирование
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Представительство в суде
+									li.services-nav__list-item
+										a.services-nav__list-link(href="#") Составление и анализ правовых документов
+						.services__inner
+							.services-promo
+								.services-promo__pict
+									.services-promo__pict-cont
+										img(src="./assets/uploads/services-img.jpg", alt="")/
+								.services-promo__content
+									h1.h1.services-promo__title Жилищное право
+									.services-promo__desc.text-block
+										p.
+											Жилищное право основывается на необходимости обеспечения органами государственной власти и органами местного самоуправления условий для осуществления гражданами права на жилище, его безопасность, неприкосновенность и недопустимость произвольного лишения жилища. А также на признании равенства участников, регулируемых законодательством отношений по владению, пользованию и распоряжению имуществом.
+							.services__content
+								.text-block
+									p Компания "Астрея" предоставляет следующие услуги в этой области:
+								.services__links
+									a.services__link(href="#") Выделение доли
+									a.services__link(href="#") Выселение из квартиры
+									a.services__link(href="#") Признание права собственности
+									a.services__link(href="#") Сделка с недвижимостью
+									a.services__link(href="#") Согласование препланировки
+								.text-block
+									p.
+										Жилищное право основывается на необходимости обеспечения органами государственной власти и органами местного самоуправления условий для осуществления гражданами права на жилище, его безопасность, неприкосновенность и недопустимость произвольного лишения жилища. А также на признании равенства участников, регулируемых законодательством отношений по владению, пользованию и распоряжению имуществом.
+								
+							.services__prices.text-block
+								h2.h2 Стоимость правовой поддержки
+								table
+									tr
+										th(style="width: 68%;") Услуга
+										th(style="width: 32%;") Цена
+									tr
+										td(style="width: 68%;") Сопровождение сделок по государственной регистрации прав на недвижимое имущество
+										td(style="width: 32%;") 4000 руб. / сделка
+									tr
+										td(style="width: 68%;") Составление договоров на отчуждение/приобретение недвижимого имущества, в т.ч. договоров аренды, залога (ипотеки).
+										td(style="width: 32%;") от 3000 руб.
+									tr
+										td(style="width: 68%;") Сопровождение сделок по государственной регистрации прав на недвижимое имущество
+										td(style="width: 32%;") 10000 руб.
+
+
+				include includes/feedback.pug
+		include includes/footer.pug
+		include includes/scripts.pug

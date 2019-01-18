@@ -1,0 +1,156 @@
+.callback-form {
+
+	.textarea {
+		padding-right: 20px;
+	}
+
+	&__row {
+		display: block;
+		margin-bottom: 35px;
+
+		&:not(:last-of-type) {
+			margin-bottom: 30px;
+
+			@media (--tablet) {
+				margin-bottom: 50px;
+			}
+		}
+	}
+
+	&__row-title {
+		display: block;
+		font: 16px var(--UbB);
+		color: var(--text-light);
+		margin-bottom: 15px;
+	}
+
+	&__field-error {
+		padding: 0 10px;
+		color: #ae6f7f;
+	}
+
+	&__field {
+		display: block;
+		width: 100%;
+		border-bottom: 2px solid var(--border);
+		transition: 400ms;
+		font-family: var(--UbReg);
+		font-size: 16px;
+		color: var(--text);
+		line-height: 2;
+
+		&._error {
+			border-color: #ae6f7f;
+		}
+
+		&._textarea {
+			resize: none;
+			height: 14vh;
+		}
+
+		&:hover {
+			border-color: var(--text-light);
+		}
+
+		&:focus {
+			border-color: var(--text);
+		}
+	}
+
+	&__agreement {
+		position: relative;
+		display: block;
+		margin-bottom: 20px;
+
+		@media (--tablet) {
+			margin-bottom: 3.2vh;
+		}
+
+		input[type='checkbox'] {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 19px;
+			height: 19px;
+			opacity: 0;
+			z-index: -1;
+		}
+
+		input[type='checkbox']:checked ~ span {
+			color: var(--btn-active);
+
+			&::before {
+				border-color: var(--btn-active);
+			}
+			
+			&::after {
+				transform: scale(1);
+			}
+		}
+
+		span {
+			position: relative;
+			display: block;
+			padding-left: 30px;
+			font: 12px/20px var(--UbReg);
+			color: var(--text-light);
+			cursor: pointer;
+			transition: 400ms;
+
+			@media (--mobile-wide) {
+				font-size: 14px;
+			}
+
+			&:hover,
+			&:active {
+				color: var(--btn-active);
+
+				&::before {
+					border-color: var(--btn-active);
+				}
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 17px;
+				height: 17px;
+				border: 1px solid var(--text-light);
+				transition: 400ms;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: scale(0);
+				display: block;
+				width: 18px;
+				height: 18px;
+				background: resolve('check-icon.svg') center/80% no-repeat;
+				transition: 400ms;
+			}
+		}
+	}
+
+	&__agreement-link {
+		display: inline-block;
+		color: var(--text-light);
+		border-bottom: 1px solid var(--text-light);
+		transition: 400ms;
+
+		&:hover {
+			border-color: var(--text-gold);
+			color: var(--text-gold);
+		}
+
+		&:active {
+			border-color: var(--text-gold-dark);
+			color: var(--text-gold-dark);
+		}
+	}
+}

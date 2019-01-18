@@ -1,0 +1,291 @@
+.feedback {
+	position: relative;
+	margin-bottom: 130px;
+
+	&._full {
+		.feedback__phone {
+			@media (--desktop) {
+				left: -190px;
+			}
+		}
+	}
+
+	.textarea {
+		padding-right: 20px;
+		margin-bottom: 35px;
+
+		@media (--tablet) {
+			margin-bottom: 6.4vh;
+		}
+	}
+
+	&__form {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 8% 8% 80px;
+		margin-left: auto;
+		border: 14px solid var(--gold);
+
+		@media (--tablet) {
+			padding: 8% 10% 12% calc(425 / 1200 * 100%);
+			border-width: 28px;
+		}
+
+		@media (--laptop) {
+			width: 75%;
+			padding-left: 10%;
+		}
+
+		&._full {
+			width: 100%;
+
+			@media (--laptop) {
+				padding-left: calc(425 / 1200 * 100%);
+
+				.feedback__submit {
+					left: calc(360 / 1200 * 100%);
+				}
+			}
+		}
+	}
+
+	&__title {
+		margin-bottom: 35px;
+		font-family: var(--SpB);
+		font-size: 24px;
+
+		@media (--tablet) {
+			margin-bottom: 7vh;
+			font-size: 32px;
+		}
+	}
+
+	&__item-title {
+		margin-bottom: 15px;
+		font-size: 14px;
+		font-family: var(--UbB);
+		color: var(--text-light);
+
+		@media (--tablet) {
+			font-size: 16px;
+		}
+	}
+
+	&__item-input,
+	&__item-textarea {
+		border-bottom: 2px solid var(--border);
+		font-family: var(--UbReg);
+		font-size: 16px;
+		color: var(--text);
+		line-height: 2;
+
+		&::placeholder {
+			opacity: 0;
+			transition: 200ms;
+		}
+
+		&:hover {
+			border-color: var(--text-light);
+		}
+
+		&:focus {
+			border-color: var(--text);
+
+			&::placeholder {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__item-input {
+		margin-bottom: 20px;
+
+		@media (--tablet) {
+			margin-bottom: 3.2vh;
+		}
+
+		&._error {
+			border-color: #ae6f7f;
+		}
+	}
+
+	&__item-textarea {
+		display: block;
+		width: 100%;
+		resize: none;
+		height: 14.8vh;
+
+		@media (--mobile-wide) {
+			height: 25vh;
+		}
+
+		@media (--tablet) {
+			height: 14.8vh;
+		}
+	}
+
+	&__field-error {
+		padding: 0 10px;
+		color: #ae6f7f;
+	}
+
+	&__agreement {
+		position: relative;
+
+		input[type='checkbox'] {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 19px;
+			height: 19px;
+			opacity: 0;
+			z-index: -1;
+		}
+
+		input[type='checkbox']:checked ~ span {
+			color: var(--btn-active);
+
+			&::before {
+				border-color: var(--btn-active);
+			}
+			
+			&::after {
+				transform: scale(1);
+			}
+		}
+
+		span {
+			position: relative;
+			display: block;
+			padding-left: 30px;
+			font: 12px/20px var(--UbReg);
+			color: var(--text-light);
+			cursor: pointer;
+			transition: 400ms;
+
+			@media (--mobile-wide) {
+				font-size: 14px;
+			}
+
+			&:hover,
+			&:active {
+				color: var(--btn-active);
+
+				&::before {
+					border-color: var(--btn-active);
+				}
+			}
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				width: 17px;
+				height: 17px;
+				border: 1px solid var(--text-light);
+				transition: 400ms;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				transform: scale(0);
+				display: block;
+				width: 18px;
+				height: 18px;
+				background: resolve('check-icon.svg') center/80% no-repeat;
+				transition: 400ms;
+			}
+		}
+	}
+
+	&__agreement-link {
+		display: inline-block;
+		color: var(--text-light);
+		border-bottom: 1px solid var(--text-light);
+		transition: 400ms;
+
+		&:hover {
+			border-color: var(--text-gold);
+			color: var(--text-gold);
+		}
+
+		&:active {
+			border-color: var(--text-gold-dark);
+			color: var(--text-gold-dark);
+		}
+	}
+
+	&__submit {
+		position: absolute;
+		bottom: -61px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 96%;
+		padding: 20px 15px;
+		text-align: center;
+		background-color: white;
+
+		@media (--mobile-wide) {
+			left: 8%;
+			transform: none;
+			width: auto;
+			padding-right: 80px;
+			padding-left: 80px;
+		}
+
+		@media (--tablet) {
+			left: calc(360 / 1200 * 100%);
+		}
+
+		@media (--laptop) {
+			left: 10%;
+		}
+	}
+
+	&__btn {
+		padding: 0 20px;
+		font-size: 16px;
+		line-height: 55px;
+		white-space: nowrap;
+
+		@media (--mobile) {
+			padding-right: 30px;
+			padding-left: 30px;
+			font-size: 18px;
+		}
+
+		@media (--tablet) {
+			font-size: 20px;
+		}
+	}
+
+	&__phone {
+		position: absolute;
+		top: 270px;
+		right: 65%;
+		display: none;
+		width: 570px;
+		height: 400px;
+		background: resolve('feedback.svg') center/contain no-repeat;
+
+		@media (--tablet) {
+			display: block;
+		}
+
+		@media (--laptop) {
+			left: -190px;
+			right: auto;
+		}
+
+		@media (--desktop) {
+			left: -160px;
+		}
+	}
+}

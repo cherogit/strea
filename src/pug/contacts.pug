@@ -1,0 +1,37 @@
+include mixins/_breadcrumbs.pug
+
+doctype html
+html(lang="ru")
+	include includes/head.pug
+	body
+		include includes/header.pug
+		main.main
+			.container
+				+breadcrumbs(['Контакты'], 'high')
+
+				.contacts
+					.contacts__promo
+						.contacts__map
+							#map map
+
+						.contacts__content
+							h1.h1.contacts__title Контакты
+							.contacts__info
+								.contacts__company-name ООО “Астрея”
+								.contacts__info-list
+									.contacts__info-item._marker г. Санкт-Петербург, ул. Площадь Конституции д.2 оф.346
+									.contacts__info-item._phone 8 (812) 999-99-06
+									.contacts__info-item._envelope astreya@gmail.com
+									.contacts__info-item._clock Пн - пт: с 10 до 18
+										br/
+										span /
+										| Сб: с 10 до 17
+
+					.contacts__route
+						.h3.contacts__route-title Как до нас добраться
+						.contacts__route-desc.text-block
+							p.
+								Первый вагон из центра, из стеклянных дверей налево, из перехода налево. На улице, обогнув угол дома, находящийся справа, вы попадаете на ул. Дмитрия Ульянова, по которой вам нужно двигаться исключительно прямо до 42 дома - до пересечения ул. Дмитрия Ульянова и ул. Большая Черемушкинская (на трамвайных путях). Переходите через трамвайные пути, и продолжаете движение по улице Дмитрия Ульянова.
+
+		include includes/footer.pug
+		include includes/scripts.pug

@@ -1,0 +1,147 @@
+.news-page {
+	margin-bottom: calc(100 / 1200 * 100%);
+
+	&__promo {
+		position: relative;
+		margin-bottom: 50px;
+
+		@media (--laptop) {
+			padding: 30px 0;
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 20px;
+			display: none;
+			width: calc(300 / 1200 * 100%);
+			height: calc(100% - 8px);
+			border: 4px solid var(--border);
+
+			@media (--laptop) {
+				display: block;
+			}
+		}
+	}
+
+	&__promo-wrap {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-bottom: calc(120 / 1200 * 100%);
+	}
+
+	&__promo-pict {
+		position: relative;
+		flex-grow: 1;
+		order: 2;
+		width: 100%;
+		padding-bottom: 50%;
+		overflow: hidden;
+
+		@media (--mobile-wide) {
+			padding-bottom: 35%;
+		}
+
+		@media (--tablet) {
+			order: 1;
+			width: 40%;
+			padding-bottom: 30%;
+		}
+
+		@media (--laptop) {
+			width: 50%;
+			height: 400px;
+			padding-bottom: 0;
+		}
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: block;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+
+	&__promo-info {
+		order: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-grow: 1;
+		width: 100%;
+
+		@media (--tablet) {
+			order: 2;
+			width: 60%;
+			padding-left: 5%;
+		}
+
+		@media (--laptop) {
+			width: 50%;
+			padding-left: 60px;
+		}
+	}
+
+	&__publication-date {
+		margin-bottom: 25px;
+		font: 16px/22px var(--UbB);
+		color: var(--text-light);
+
+		@media (--laptop) {
+			margin-bottom: 60px;
+		}
+	}
+
+	&__promo-desc {
+		width: 100%;
+
+		@media (--laptop) {
+			width: calc(750 / 1200 * 100%);
+			margin: 0 0 0 auto;
+		}
+	}
+
+	&__content {
+		overflow: hidden;
+
+		.text-block {
+			padding: 40px 0 30px;
+		}
+	}
+
+	&__content-pict {
+		position: relative;
+		float: right;
+		width: 100%;
+		margin: 0 0 25px 25px;
+		padding-bottom: 50%;
+		overflow: hidden;
+
+		@media (--mobile-wide) {
+			width: 50%;
+			padding-bottom: 30%;
+		}
+
+		@media (--tablet) {
+			width: 38.3333%;
+			padding-bottom: 26%;
+		}
+
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: block;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+}

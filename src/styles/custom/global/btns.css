@@ -1,0 +1,93 @@
+.btn {
+	display: inline-block;
+	text-align: center;
+	transition: 300ms;
+	font-family: var(--UbM);
+
+	&__arrow {
+		background-color: white;
+		padding-right: 24px;
+
+		svg {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 23px;
+			height: 17px;
+			transform: translateY(-50%);
+			fill: var(--text);
+			transition: 300ms;
+		}
+
+		&._long {
+			padding-right: 66px;
+
+			svg {
+				width: 45px;
+				height: 19px;
+			}
+		}
+
+		&:hover,
+		&:focus {
+			color: var(--text-gold);
+
+			svg {
+				fill: var(--text-gold);
+			}
+		}
+
+		&:active {
+			color: var(--text-gold-dark);
+
+			svg {
+				fill: var(--text-gold-dark);
+			}
+		}
+	}
+
+	&__full {
+		font-family: var(--SpSB);
+		font-size: 18px;
+		color: white;
+		background-color: var(--text);
+
+		@media (--mobile) {
+			font-size: 20px;
+		}
+
+		&:hover {
+			background-color: var(--btn-hover);
+		}
+
+		&:active {
+			background-color: var(--btn-active);
+		}
+	}
+
+	&__hollow {
+		padding: 1px 10px;
+		font-family: var(--SpSB);
+		font-size: 18px;
+		color: var(--text);
+		background-color: transparent;
+		border: 2px solid var(--gold);
+
+		@media (--laptop) {
+			border-width: 5px;
+		}
+
+		@media (--desktop) {
+			font-size: 20px;
+		}
+
+		&:hover {
+			color: var(--text-gold);
+		}
+
+		&:active {
+			color: var(--text-gold-dark);
+			background-color: var(--pale);
+		}
+	}
+}

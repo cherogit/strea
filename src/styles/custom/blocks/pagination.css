@@ -1,0 +1,44 @@
+.pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+
+	@media (--mobile-wide) {
+		justify-content: flex-start;
+	}
+
+	&._center {
+		justify-content: center;
+	}
+
+	&__prev,
+	&__next {
+		display: block;
+		width: 25px;
+		height: 18px;
+
+		svg {
+			fill: var(--text);
+			transition: 400ms;
+		}
+
+		&:hover {
+			svg {
+				fill: var(--text-gold);
+			}
+		}
+
+		&:active {
+			svg {
+				fill: var(--text-gold-dark);
+			}
+		}
+
+		&._inactive {
+			svg {
+				fill: var(--light-gray);
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+.nav {
+	position: fixed;
+	top: 92px;
+	right: 0;
+	transform: translateX(100%);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 100%;
+	height: calc(100vh - 92px);
+	padding-bottom: 120px;
+	background: white;
+	transition: transform 360ms, background 800ms;
+	z-index: 9;
+
+	@media (--laptop) {
+		position: static;
+		top: 0;
+		transform: none;
+		display: block;
+		width: auto;
+		height: auto;
+		padding-bottom: 0;
+		background: transparent;
+	}
+
+	&._js-show {
+		transform: translateX(0);
+		overflow: auto;
+		background: #f5f5f5;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		flex-shrink: 0;
+		margin-bottom: 20px;
+		padding: 20px 0 20px 40px;
+		list-style: none;
+		border-bottom: 2px solid var(--border);
+
+		@media (--tablet) {
+			height: 100%;
+			flex-shrink: 1;
+			margin-bottom: 0;
+			padding-left: 0;
+			border: 0;
+		}
+
+		@media (--laptop) {
+			flex-direction: row;
+			align-items: flex-start;
+			height: auto;
+		}
+	}
+
+	&__item {
+		margin: 0 15px;
+
+		@media (--laptop) {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		@media (--desktop) {
+			margin-right: 15px;
+			margin-left: 15px;
+		}
+	}
+
+	&__link {
+		display: block;
+		font-family: var(--SpSB);
+		font-size: 18px;
+		line-height: 56px;
+		transition: color 300ms;
+
+		@media (--laptop) {
+			font-size: 16px;
+			line-height: 86px;
+
+			&._dropdown {
+				border-bottom: 2px dashed transparent;
+				transition: 400ms ease-out;
+
+				&._open {
+					border-bottom-style: solid;
+					border-color: var(--text-gold-dark);
+
+					&:hover {
+						color: var(--text-gold);
+						border-color: var(--text-gold);
+					}
+				}
+
+				&:hover {
+					border-color: var(--light-gray);
+				}
+
+				&:active {
+					border-bottom-style: solid;
+					border-color: var(--text-gold-dark);
+				}
+			}
+		}
+
+		@media (--desktop) {
+			font-size: 20px;
+		}
+
+		&:hover,
+		&:focus {
+			color: var(--text-gold);
+		}
+
+		&:active {
+			color: var(--text-gold-dark);
+		}
+	}
+}

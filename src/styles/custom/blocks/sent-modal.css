@@ -1,0 +1,19 @@
+.sent-modal {
+	padding: 50px 35px;
+
+	@media (--tablet) {
+		padding: 0 70px;
+	}
+
+	&__message {
+		margin-bottom: 30px;
+		text-align: center;
+		font: 16px var(--UbReg);
+		line-height: 1.2;
+		color: var(--text);
+
+		@media (--tablet) {
+			margin-bottom: 50px;
+		}
+	}
+}

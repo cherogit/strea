@@ -1,0 +1,7 @@
+.news {
+	margin-bottom: 50px;
+
+	@media (--tablet) {
+		margin-bottom: calc(100 / 1200 * 100%);
+	}
+}

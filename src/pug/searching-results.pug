@@ -1,0 +1,62 @@
+include mixins/_breadcrumbs.pug
+
+doctype html
+html(lang="ru")
+	include includes/head.pug
+	body
+		include includes/header.pug
+		main.main
+			.container
+				+breadcrumbs(['Результаты поиска'], 'high')
+				
+				h1.h1 Результаты поиска
+				.search-page
+					form.search-form(action="")
+						label.search-form__row
+							input.search-form__field(type="search" value="Как преследовать горящую скакунину")/
+							button.search-form__reset(type="button")
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.1"><path d="M16,0L9.1,6.9L2.1,0L0,2.1l6.9,6.9L0,16l2.1,2.1l6.9-6.9l6.9,6.9l2.1-2.1l-6.9-6.9l6.9-6.9L16,0L16,0z"/></svg>
+							button.search-form__submit
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.91 19.91"> <path d="M19.91,18.5,14.44,13a8.06,8.06,0,0,0-.65-10.66,8.06,8.06,0,0,0-11.42,0A8.07,8.07,0,0,0,8.08,16.15,8,8,0,0,0,13,14.44l5.47,5.47ZM3.78,12.37a6.07,6.07,0,1,1,8.59-8.59,6.07,6.07,0,0,1-8.59,8.59Z" /></svg>
+					.search-page__results.searching-results
+						ul.searching-results__list
+							each item in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+								li.searching-results__item
+									span.searching-results__item-counter 100.
+									a.searching-results__item-title(href="#") “Горящая скакунина” в Большой Советской Энциклопедии
+									ul.searching-results__item-path.path-list
+										li.path-list__item
+											a.path-list__link(href="#") Главная
+										li.path-list__item
+											a.path-list__link(href="#") Услуги
+										li.path-list__item
+											a.path-list__link(href="#") Физические лица
+										li.path-list__item
+											a.path-list__link(href="#") Представительство в суде
+									.searching-results__item-desc Горящая скакунина обладает особой поведенческой чертой,  доставшейся ей от её предков. Именно данный вид скакунин при скаче загарается ярким пламенем и горит пока не изжёт её всю полн...
+
+						.pagination
+							a.pagination__prev._inactive(href="#")
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M12.25,17.75,0,8.88,12.24,0,14,2.43,7.18,7.38H23.64v3H7.18L14,15.32Z"/></svg>
+
+							ul.pagination-list
+								li.pagination-list__item
+									a.pagination-list__link._active(href="#") 1
+								li.pagination-list__item
+									a.pagination-list__link(href="#") ... 
+								li.pagination-list__item
+									a.pagination-list__link(href="#") 3
+								li.pagination-list__item
+									a.pagination-list__link(href="#") 4
+								li.pagination-list__item
+									a.pagination-list__link(href="#") 5
+								li.pagination-list__item
+									a.pagination-list__link(href="#") ...
+								li.pagination-list__item
+									a.pagination-list__link(href="#") 17
+							a.pagination__next(href="#")
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M11.39,0,23.64,8.87,11.4,17.75,9.64,15.32l6.82-5H0v-3H16.46L9.63,2.43Z"/></svg>
+
+
+		include includes/footer.pug
+		include includes/scripts.pug

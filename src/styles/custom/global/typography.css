@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'Spectral-SemiBold';
+	src: resolve('Spectral-SemiBold.woff2') format('woff2'), resolve('Spectral-SemiBold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+	font-family: 'Spectral-Bold';
+	src: resolve('Spectral-Bold.woff2') format('woff2'), resolve('Spectral-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+	font-family: 'Spectral-ExtraBold';
+	src: resolve('Spectral-ExtraBold.woff2') format('woff2'), resolve('Spectral-ExtraBold.woff') format('woff');
+	font-weight: 800;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Regular';
+	src: resolve('Ubuntu-Regular.woff2') format('woff2'), resolve('Ubuntu-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Medium';
+	src: resolve('Ubuntu-Medium.woff2') format('woff2'), resolve('Ubuntu-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}
+
+@font-face {
+	font-family: 'Ubuntu-Bold';
+	src: resolve('Ubuntu-Bold.woff2') format('woff2'), resolve('Ubuntu-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: subpixel-antialiased;
+}

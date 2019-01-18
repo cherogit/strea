@@ -1,0 +1,48 @@
+@import 'global/variables.css';
+@import 'global/typography.css';
+@import 'global/global.css';
+@import 'global/btns.css';
+
+@import 'blocks/breadcrumbs.css';
+@import 'blocks/modal.css';
+@import 'blocks/burger-button.css';
+@import 'blocks/path-list.css';
+@import 'blocks/section-reviews.css';
+@import 'blocks/news-list.css';
+@import 'blocks/presentation.css';
+@import 'blocks/text-block.css';
+@import 'blocks/confidence.css';
+@import 'blocks/feedback.css';
+@import 'blocks/section.css';
+@import 'blocks/header.css';
+@import 'blocks/footer.css';
+@import 'blocks/nav.css';
+@import 'blocks/search-form.css';
+@import 'blocks/searching-results.css';
+@import 'blocks/pagination.css';
+@import 'blocks/pagination-list.css';
+@import 'blocks/articles-list.css';
+@import 'blocks/about-promo.css';
+@import 'blocks/about-us.css';
+@import 'blocks/team.css';
+@import 'blocks/certificates.css';
+@import 'blocks/slider-wrap.css';
+@import 'blocks/news.css';
+@import 'blocks/article-page.css';
+@import 'blocks/news-page.css';
+@import 'blocks/faq.css';
+@import 'blocks/faq-list.css';
+@import 'blocks/contacts.css';
+@import 'blocks/submenu.css';
+@import 'blocks/services.css';
+@import 'blocks/services-nav.css';
+@import 'blocks/services-submenu.css';
+@import 'blocks/services-promo.css';
+@import 'blocks/callback-form.css';
+@import 'blocks/sent-modal.css';
+
+
+
+@import 'blocks/test.css';
+
+@import 'global/animation.css';

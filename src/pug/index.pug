@@ -1,0 +1,116 @@
+doctype html
+html(lang="ru")
+	include includes/head.pug
+	body
+		include includes/header.pug
+		main.main
+			.container
+				section.presentation
+					.presentation__content
+						h1.h1.presentation__title Астрея предлагает лучшие юридические <br/> консультации в Санкт-Петербрурге
+						ul.presentation__list
+							li.presentation__item
+								span 1
+								| Высокую квалификацию
+								span._guarantee Гарантируем:
+							li.presentation__item
+								span 2
+								| Строгую конфиденциальность
+							li.presentation__item
+								span 3
+								| Защиту Ваших интересов
+				section.section.confidence
+					h2.section__title Почему нам доверяют
+					ul.confidence__list
+						li.confidence__item
+							.confidence__index 1 /
+							.confidence__icon._loupe
+							.confidence__content
+								.confidence__title Индивидуальный подход
+								.confidence__desc Наши юристы всегда на связи, регулярно обновляют информацию о текущих делах и готовы ответить на вопросы
+						li.confidence__item
+							.confidence__index 2 /
+							.confidence__icon._reward
+							.confidence__content
+								.confidence__title Опыт работы юристов от 8ми лет
+								.confidence__desc Никаких дилетантов и студентов, Вы получите решение на основании положительного опыта, а не теорий
+						li.confidence__item
+							.confidence__index 3 /
+							.confidence__icon._tricorn
+							.confidence__content
+								.confidence__title Наши специалисты в курсе <br/> всех поправок и изменений
+								.confidence__desc Постоянное обучение на курсах повышения квалификации, тренингах, семинарах и аттестация юристов
+						li.confidence__item
+							.confidence__index 4 /
+							.confidence__icon._hammer
+							.confidence__content
+								.confidence__title Честность
+								.confidence__desc Ради гонорара, мы не вводим клиента в заблуждение относительно перспектив его дела. Для нас важен положительный результат нашей работы
+						li.confidence__item
+							.confidence__index 5 /
+							.confidence__icon._darts
+							.confidence__content
+								.confidence__title Большой штат узкопрофильных <br/> специалистов
+								.confidence__desc Сотрудничайте с юристом, который имеет практику именно в Вашем вопросе
+					.confidence__more
+						a.confidence__more-btn.btn.btn__arrow(href="about.html") Подробнее о нас
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.29 16.35"> <polygon points="21 9.11 22.29 8.18 21 7.24 21 7.18 20.91 7.18 11.01 0 9.83 1.62 17.5 7.18 0 7.18 0 9.18 17.5 9.18 9.83 14.73 11.01 16.35 20.91 9.18 21 9.18 21 9.11" /> </svg>
+				section.section.section-reviews
+					h2.section__title Отзывы наших клиентов
+					.section-reviews__slider.slider-wrap
+						button.slider-wrap__arrow._prev(type="button")
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.3 43.5"><path d="M21.8,0L0,21.8l21.8,21.8l3.5-3.5L7.1,21.8L25.3,3.5L21.8,0L21.8,0z"/></svg>
+						.reviews-slider
+							.section-reviews__item._protrudes
+								.section-reviews__border
+								.section-reviews__image-container
+									img.section-reviews__image(src="./assets/uploads/reviews.jpg" alt="")/
+								.section-reviews__content
+									span.section-reviews__title Помогли с судом
+									p.section-reviews__desc Наши юристы всегда на связи, регулярно обновляют информацию о текущих делах и готовы ответить на вопросы
+								span.section-reviews__author К.К. Евдокимов
+							.section-reviews__item._protrudes
+								.section-reviews__border
+								.section-reviews__image-container
+									img.section-reviews__image(src="./assets/uploads/reviews.jpg" alt="")/
+								.section-reviews__content
+									span.section-reviews__title Помогли с судом
+									p.section-reviews__desc Наши юристы всегда на связи, регулярно обновляют информацию о текущих делах и готовы ответить на вопросы
+								span.section-reviews__author К.К. Евдокимов
+							.section-reviews__item
+								.section-reviews__border
+								.section-reviews__image-container
+								.section-reviews__content
+									span.section-reviews__title Составили заявление
+									p.section-reviews__desc Наши юристы всегда на связи, регулярно обновляют информацию о текущих делах и готовы ответить на вопросы
+								span.section-reviews__author К.К. Евдокимов
+						button.slider-wrap__arrow._next(type="button")
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.3 43.6"><path d="M3.5,43.6,25.3,21.8,3.5,0,0,3.5,18.2,21.8,0,40.1l3.5,3.5Z"/></svg>
+				section.section.news-list
+					h2.section__title Новости
+					.news-list__item
+						.news-list__border
+						.news-list__date 19/03/2018
+						.news-list__image-container
+							img.news-list__image(src="./assets/uploads/news.jpg" alt="")/
+						.news-list__content
+							a.news-list__title(href="./news-page.html") Чем отличаются юридические услуги и юридическая помощь?
+							p.news-list__desc Услуги, которые требуются для людей разнообразны и многогранны. Определенные операции, нацеленные на осведомление, а иногда и знакомство с юриспруденцией  называют юридические услуги, которые представляют специалисты в правовой области ...
+						a.news-list__btn.btn.btn__arrow._long(href="news-page.html") Читать далее
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.25 18.33"> <polygon points="43 10.1 44.25 9.17 43 8.23 43 8.17 42.92 8.17 32.02 0 30.82 1.6 39.58 8.17 0 8.17 0 10.17 39.58 10.17 30.82 16.73 32.02 18.33 42.91 10.17 43 10.17 43 10.1" /></svg>
+					.news-list__item
+						.news-list__border
+						.news-list__date 19/03/2018
+						.news-list__image-container
+							img.news-list__image(src="./assets/uploads/news2.jpg" alt="")/
+						.news-list__content
+							a.news-list__title(href="./news-page.html") Чем отличаются юридические услуги и юридическая помощь?
+							p.news-list__desc Услуги, которые требуются для людей разнообразны и многогранны. Определенные операции, нацеленные на осведомление, а иногда и знакомство с юриспруденцией  называют юридические услуги, которые представляют специалисты в правовой области ...
+						a.news-list__btn.btn.btn__arrow._long(href="news-page.html") Читать далее
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.25 18.33"> <polygon points="43 10.1 44.25 9.17 43 8.23 43 8.17 42.92 8.17 32.02 0 30.82 1.6 39.58 8.17 0 8.17 0 10.17 39.58 10.17 30.82 16.73 32.02 18.33 42.91 10.17 43 10.17 43 10.1" /></svg>
+					.news-list__all-news
+						a.news-list__all-btn.btn.btn__arrow(href="news.html") Все новости
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.29 16.35"> <polygon points="21 9.11 22.29 8.18 21 7.24 21 7.18 20.91 7.18 11.01 0 9.83 1.62 17.5 7.18 0 7.18 0 9.18 17.5 9.18 9.83 14.73 11.01 16.35 20.91 9.18 21 9.18 21 9.11" /></svg>
+				include includes/feedback.pug
+		include includes/footer.pug
+		include includes/scripts.pug

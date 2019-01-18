@@ -1,0 +1,110 @@
+.modal {
+	max-width: 410px;
+	margin: 0 auto;
+	padding: 70px 25px 50px;
+
+	@media (--tablet) {
+		padding: 0;
+	}
+
+	&__close {
+		position: absolute;
+		top: 10px;
+		right: 5px;
+		display: block;
+		width: 35px;
+		height: 35px;
+		background: #dededf;
+		border-radius: 50%;
+		transition: 400ms;
+
+		@media (--tablet) {
+			top: -40px;
+			right: -12vw;
+			width: 65px;
+			height: 65px;
+		}
+
+		&:hover {
+			background: #d2d2d4;
+		}
+
+		&:active {
+			background: #c8c7ca;
+		}
+
+		svg {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			display: block;
+			width: 31%;
+			height: 31%;
+			fill: #86828c;
+		}
+	}
+
+	&__title {
+		margin-bottom: 40px;
+		text-align: center;
+		font: 26px var(--SpB);
+		color: var(--text);
+
+		@media (--tablet) {
+			font-size: 32px;
+		}
+	}
+
+	&__btn {
+		width: 100%;
+		padding: 0 20px;
+		line-height: 55px;
+
+		@media (--mobile) {
+			padding-right: 30px;
+			padding-left: 30px;
+		}
+	}
+}
+
+.mfp-bg {
+	background: #fefefe;
+}
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+	opacity: 0;
+	transition: all .2s ease-in-out;
+	transform: scale(.98);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+	opacity: 1;
+	transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+	transform: scale(.98);
+	opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+	opacity: 0;
+	transition: opacity .3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+	opacity: 1;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+	opacity: 0;
+}

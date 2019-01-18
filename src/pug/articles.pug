@@ -1,0 +1,88 @@
+include mixins/_breadcrumbs.pug
+
+doctype html
+html(lang="ru")
+	include includes/head.pug
+	body
+		include includes/header.pug
+		main.main
+			.container
+				+breadcrumbs(['Статьи'], 'high')
+
+				h1.h1 Статьи
+				.articles
+					.articles-list
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news.jpg')")
+								.articles-list__item-title Чем отличаются юридические услуги и юридическая помощь?
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news2.jpg')")
+								.articles-list__item-title Виды платных, оказываемых адвокатом юридических и психологических услуг
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news.jpg')")
+								.articles-list__item-title Чем отличаются юридические услуги и юридическая помощь?
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news2.jpg')")
+								.articles-list__item-title Много ли в России профессиональных юристов?
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news.jpg')")
+								.articles-list__item-title Виды платных, оказываемых адвокатом юридических услуг
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news2.jpg')")
+								.articles-list__item-title 10 причин обратиться к семейному адвокату после развода
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news.jpg')")
+								.articles-list__item-title Чем отличаются юридические услуги и юридическая помощь?
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news2.jpg')")
+								.articles-list__item-title Виды платных, оказываемых адвокатом юридических и психологических услуг
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news.jpg')")
+								.articles-list__item-title Чем отличаются юридические услуги и юридическая помощь?
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news2.jpg')")
+								.articles-list__item-title Много ли в России профессиональных юристов?
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news.jpg')")
+								.articles-list__item-title Виды платных, оказываемых адвокатом юридических услуг
+						a.articles-list__item(href="./article-page.html")
+							.articles-list__item-wrap
+								.articles-list__item-pict(style="background-image: url('./assets/uploads/news2.jpg')")
+								.articles-list__item-title 10 причин обратиться к семейному адвокату после развода
+
+					.pagination._center
+						a.pagination__prev._inactive(href="#")
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M12.25,17.75,0,8.88,12.24,0,14,2.43,7.18,7.38H23.64v3H7.18L14,15.32Z"/></svg>
+
+						ul.pagination-list
+							li.pagination-list__item
+								a.pagination-list__link._active(href="#") 1
+							li.pagination-list__item
+								a.pagination-list__link(href="#") ... 
+							li.pagination-list__item
+								a.pagination-list__link(href="#") 3
+							li.pagination-list__item
+								a.pagination-list__link(href="#") 4
+							li.pagination-list__item
+								a.pagination-list__link(href="#") 5
+							li.pagination-list__item
+								a.pagination-list__link(href="#") ...
+							li.pagination-list__item
+								a.pagination-list__link(href="#") 17
+						a.pagination__next(href="#")
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M11.39,0,23.64,8.87,11.4,17.75,9.64,15.32l6.82-5H0v-3H16.46L9.63,2.43Z"/></svg>
+
+
+		include includes/footer.pug
+		include includes/scripts.pug

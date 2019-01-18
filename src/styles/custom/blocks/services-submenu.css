@@ -1,0 +1,41 @@
+.services-submenu {
+	list-style: none;
+
+	&__link {
+		position: relative;
+		display: block;
+		padding: 6px 0 6px 40px;
+		font: 16px/26px var(--UbReg);
+		color: var(--text);
+		transition: 400ms;
+
+		&:hover,
+		&:focus {
+			color: var(--text-gold);
+		}
+
+		&:active {
+			color: var(--text-gold-dark);
+		}
+
+		&._active {
+			font-family: var(--UbM);
+
+			&::before {
+				display: block;
+			}
+		}
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			display: none;
+			width: 3px;
+			height: 70%;
+			background: var(--gold);
+		}
+	}
+}

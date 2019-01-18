@@ -1,0 +1,125 @@
+header.header
+	.container
+		.header__wrapper
+			a.header__logo(href="./index.html")
+				img(src="./assets/icon/logo.svg")/
+			nav.header__nav.nav
+				ul.nav__list
+					li.nav__item
+						a.nav__link(href="./about.html") О компании
+					li.nav__item
+						a.nav__link._dropdown(href="javascript:void(0)") Услуги
+					li.nav__item
+						a.nav__link(href="./articles.html") Статьи
+					li.nav__item
+						a.nav__link(href="./news.html") Новости
+					li.nav__item
+						a.nav__link(href="./faq.html") FAQ
+					li.nav__item
+						a.nav__link(href="./contacts.html") Контакты
+				a.header__tel._mobile(href="tel:88129999906") 8 (812) 999-99-06
+				a.header__callback._mobile.btn.btn__hollow.popup(href="#callback-form") Заказать звонок
+			button.header__search-btn(type="button")
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.91 19.91"> <path d="M19.91,18.5,14.44,13a8.06,8.06,0,0,0-.65-10.66,8.06,8.06,0,0,0-11.42,0A8.07,8.07,0,0,0,8.08,16.15,8,8,0,0,0,13,14.44l5.47,5.47ZM3.78,12.37a6.07,6.07,0,1,1,8.59-8.59,6.07,6.07,0,0,1-8.59,8.59Z" /></svg>
+			a.header__tel(href="tel:88129999906") 8 (812) 999-99-06
+			a.header__callback.btn.btn__hollow.popup(href="#callback-form") Заказать звонок
+			.burger-button
+				.burger-button__line._top
+				.burger-button__line
+				.burger-button__line._bottom
+	.header__search
+		.container
+			form.search-form(action="")
+				label.search-form__row
+					input.search-form__field(type="search")/
+					button.search-form__reset(type="button")
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.1"><path d="M16,0L9.1,6.9L2.1,0L0,2.1l6.9,6.9L0,16l2.1,2.1l6.9-6.9l6.9,6.9l2.1-2.1l-6.9-6.9l6.9-6.9L16,0L16,0z"/></svg>
+
+					button.search-form__submit
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.91 19.91"><path d="M19.91,18.5,14.44,13a8.06,8.06,0,0,0-.65-10.66,8.06,8.06,0,0,0-11.42,0A8.07,8.07,0,0,0,8.08,16.15,8,8,0,0,0,13,14.44l5.47,5.47ZM3.78,12.37a6.07,6.07,0,1,1,8.59-8.59,6.07,6.07,0,0,1-8.59,8.59Z" /></svg>
+	.header__submenu.submenu
+		.container
+			.submenu__wrapper
+				button.return-btn(type="button") 
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M12.25,17.75,0,8.88,12.24,0,14,2.43,7.18,7.38H23.64v3H7.18L14,15.32Z"/></svg>
+					span Назад
+				.submenu__col._wide
+					.submenu__col-title Физическим лицам
+					.submenu__elements
+						button.return-btn(type="button") 
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M12.25,17.75,0,8.88,12.24,0,14,2.43,7.18,7.38H23.64v3H7.18L14,15.32Z"/></svg>
+							span Назад
+						.submenu__elements-title Физическим лицам
+						ul.submenu__list._column-count
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Взыскание долгов / ущерба
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Гражданское право
+							li.submenu__list-item
+								a.submenu__list-link._popular(href="./services.html") Жилищное право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Защита прав потребителей
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Земельное право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Кредитный юрист
+							li.submenu__list-item
+								a.submenu__list-link._popular(href="./services.html") Наследственное право
+							li.submenu__list-item
+								a.submenu__list-link._popular(href="./services.html") Семейное право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Страховое право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Трудовое право
+							li.submenu__list-item
+								a.submenu__list-link._popular(href="./services.html") Уголовное право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Юрист по ДТП
+				.submenu__col
+					.submenu__col-title Юридическим лицам
+					.submenu__elements
+						button.return-btn(type="button") 
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M12.25,17.75,0,8.88,12.24,0,14,2.43,7.18,7.38H23.64v3H7.18L14,15.32Z"/></svg>
+							span Назад
+						.submenu__elements-title Юридическим лицам
+						ul.submenu__list
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Абонентское обслуживание
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Арбитраж
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Корпоративное право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Ликвидация Фирмы
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Налоговое право
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Регистрация фирмы
+				.submenu__col._small
+					.submenu__col-title Другое
+					.submenu__elements
+						button.return-btn(type="button") 
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.64 17.75"><path class="cls-1" d="M12.25,17.75,0,8.88,12.24,0,14,2.43,7.18,7.38H23.64v3H7.18L14,15.32Z"/></svg>
+							span Назад
+						.submenu__elements-title Другое
+						ul.submenu__list
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Лицензирование
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Представительство в суде
+							li.submenu__list-item
+								a.submenu__list-link(href="./services.html") Составление и анализ правовых документов
+
+
+
+
+
+
+
+
+
+
+
+
+
+

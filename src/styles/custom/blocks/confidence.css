@@ -1,0 +1,161 @@
+.confidence {
+	margin-bottom: calc(150 / 1200 * 100%);
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		list-style: none;
+
+		@media (--tablet) {
+			padding-left: 120px;
+		}
+
+		@media (--laptop) {
+			padding-left: 177px;
+		}
+
+		@media (--desktop) {
+			padding-left: 15%;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 30px;
+
+		@media (--tablet) {
+			margin-bottom: 4vh;
+		}
+	}
+
+	&__index {
+		display: none;
+		font-family: var(--SpEB);
+		font-size: 80px;
+		color: var(--border);
+		white-space: nowrap;
+		margin-right: 2%;
+
+		@media (--tablet) {
+			display: block;
+		}
+
+		@media (--laptop) {
+			font-size: 100px;
+		}
+	}
+
+	&__icon {
+		flex-shrink: 0;
+		width: 65px;
+		height: 65px;
+		margin-right: 15px;
+
+		@media (--mobile-wide) {
+			margin-right: 4%;
+		}
+
+		@media (--tablet) {
+			width: 100px;
+			height: 100px;
+		}
+
+		@media (--laptop) {
+			height: 147px;
+			width: 147px;
+		}
+
+		&._loupe {
+			background: resolve('confidence1.svg') center/contain no-repeat;
+		}
+
+		&._reward {
+			background: resolve('confidence2.svg') center/contain no-repeat;
+		}
+
+		&._tricorn {
+			background: resolve('confidence3.svg') center/contain no-repeat;
+		}
+
+		&._hammer {
+			background: resolve('confidence4.svg') center/contain no-repeat;
+		}
+
+		&._darts {
+			background: resolve('confidence5.svg') center/contain no-repeat;
+		}
+	}
+
+	&__content {
+
+		@media (--tablet) {
+			padding-right: 8%;
+		}
+
+		@media (--laptop) {
+			padding-right: 12%;
+		}
+	}
+
+	&__title {
+		font-family: var(--SpB);
+		font-size: 16px;
+		color: var(--text-gold);
+		line-height: 1.2;
+		margin-bottom: 15px;
+
+		@media (--mobile) {
+			font-size: 18px;
+		}
+
+		@media (--tablet) {
+			margin-bottom: 20px;
+			font-size: 20px;
+
+			br {
+				display: inline;
+			}
+		}
+
+		@media (--laptop) {
+			margin-bottom: 27px;
+		}
+
+		br {
+			display: none;
+		}
+	}
+
+	&__desc {
+		font-size: 14px;
+		line-height: 1.3;
+
+		@media (--tablet) {
+			font-size: 16px;
+		}
+	}
+
+	&__more {
+		width: 100%;
+		padding-left: 20px;
+
+		@media (--tablet) {
+			padding-left: 120px;
+		}
+
+		@media (--laptop) {
+			padding-left: 177px;
+		}
+
+		@media (--desktop) {
+			padding-left: 15%;
+		}
+	}
+
+	&__more-btn {
+		position: relative;
+		padding: 15px 35px 18px 0;
+	}
+}

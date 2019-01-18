@@ -1,0 +1,54 @@
+footer.footer
+	.footer__border
+		.footer__wrapper.container
+			.footer__item._marker г. СПБ, ул. Пл. Конституции <br/> д.2 оф.346
+			a(href="mailto:astreya@gmail.com").footer__item._envelope Astreya@gmail.com
+			a(href="tel:88129999906").footer__item._phone 8 (812) 999-99-06
+			.footer__item._clock Пн - пт: с 10 до 18 
+				br/
+				span /
+				| Сб: с 10 до 17
+	.footer__bottom
+		ul.footer__bottom-list
+			li.footer__bottom-item
+				a.footer__bottom-link(href="#") Карта сайта
+			li.footer__bottom-item
+				a.footer__bottom-link(href="#") ООО Астрея
+			li.footer__bottom-item
+				a.footer__bottom-link(href="#") Сайт разработан: AstraMG
+
+
+
+
+form#callback-form.callback-form.modal.zoom-anim-dialog.mfp-hide(action="")
+	.modal__title Заказ обратного звонка
+	label.callback-form__row
+		span.callback-form__row-title Имя*
+			span.callback-form__field-error Введите имя
+		input.callback-form__field._error(type="text" required)/
+	label.callback-form__row
+		span.callback-form__row-title Телефон*
+			span.callback-form__field-error Введите номер телефона
+		input.callback-form__field(type="tel" required)/
+	label.callback-form__row
+		span.callback-form__row-title Комментарий
+		.textarea.custom-scroll_container
+			textarea.callback-form__field._textarea.custom-scroll_inner
+			.custom-scroll_bar-y
+	label.callback-form__agreement
+		input(type="checkbox")/
+		span Я согласен с условиями политики конфиденциальности 
+			a.callback-form__agreement-link(href="#" target="_blank") условия политики конфиденциальности
+	button.modal__btn.btn.btn__full Заказать консультацию
+	button.modal__close.popup-close(type="button")
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.1"><path d="M16,0L9.1,6.9L2.1,0L0,2.1l6.9,6.9L0,16l2.1,2.1l6.9-6.9l6.9,6.9l2.1-2.1l-6.9-6.9l6.9-6.9L16,0L16,0z"/></svg>
+
+#sent.sent-modal.modal.zoom-anim-dialog.mfp-hide
+	.modal__title Спасибо!
+	.sent-modal__wrapper
+		.sent-modal__message Мы обязательно скоро свяжемся
+		button.modal__btn.popup-close.btn.btn__full(type="button") весь в нетерпении :)
+	button.modal__close.popup-close(type="button")
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.1 18.1"><path d="M16,0L9.1,6.9L2.1,0L0,2.1l6.9,6.9L0,16l2.1,2.1l6.9-6.9l6.9,6.9l2.1-2.1l-6.9-6.9l6.9-6.9L16,0L16,0z"/></svg>
+
+a.popup._sent-trigger(href="#sent" style="display: none;")

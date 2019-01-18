@@ -1,0 +1,162 @@
+.text-block {
+
+	strong {
+		font: 14px/1.2 var(--UbB);
+		color: var(--text);
+
+		@media (--tablet) {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	p {
+		margin-bottom: 20px;
+		font: 14px/1.2 var(--UbReg);
+		color: var(--text);
+
+		@media (--tablet) {
+			font-size: 16px;
+			line-height: 22px;
+		}
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+
+	a {
+		transition: 400ms;
+	}
+	
+	blockquote {
+		margin-bottom: 40px;
+		padding-top: 20px;
+		font: 18px/22px var(--UbReg);
+		color: var(--text-gold);
+
+		@media (--tablet) {
+			margin-bottom: 60px;
+			padding-top: 40px;
+			font-size: 24px;
+			line-height: 32px;
+		}
+	}
+
+	img {
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+		margin-bottom: 50px;
+		padding-top: 30px;
+	}
+
+	ol {
+		list-style: none;
+		counter-reset: myCounter;
+
+		li {
+			&::before {
+				counter-increment: myCounter;
+				content: counter(myCounter);
+				display: inline-block;
+			}
+
+			a {
+				color: inherit;
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			&:last-of-type {
+				margin-bottom: 0;
+			}
+
+			& > ul {
+				padding-left: 20px;
+			}
+
+			a {
+				display: inline-block;
+			}
+		}
+	}
+
+	table {
+		width: 100%;
+		margin-bottom: 25px;
+		border-spacing: 0;
+
+		th {
+			display: none;
+			padding-right: 50px;
+			padding-bottom: 45px;
+			border-right: 1px solid var(--border);
+			text-align: left;
+			font: 18px var(--SpB);
+			line-height: 1.2;
+			color: var(--text-gold);
+
+			@media (--mobile-wide) {
+				display: table-cell;
+			}
+
+			@media (--tablet) {
+				font-size: 20px;
+			}
+
+			&:last-of-type {
+				padding-left: 65px;
+				padding-right: 0;
+				border: 0;
+			}
+		}
+
+		td {
+			display: block;
+			margin-bottom: 15px;
+			font-size: 14px;
+
+			@media (--premobile-wide) {
+				width: 100%!important;
+			}
+
+			@media (--mobile-wide) {
+				display: table-cell;
+				vertical-align: top;
+				margin-bottom: 0;
+				padding-right: 6%;
+				padding-bottom: 30px;
+				border-right: 1px solid var(--border);
+			}
+
+			@media (--tablet) {
+				padding-right: 50px;
+				font-size: 16px;
+			}
+
+			&:last-of-type {
+				padding-right: 0;
+				padding-bottom: 15px;
+				border-right: 0;
+				border-bottom: 1px solid var(--border);
+				font-family: var(--UbB);
+
+				@media (--mobile-wide) {
+					padding-left: 8%;
+					padding-bottom: 0;
+					border: 0;
+					font-family: var(--UbReg);
+				}
+
+				@media (--tablet) {
+					padding-left: 65px;
+				}
+			}
+		}
+	}
+}

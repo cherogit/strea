@@ -1,0 +1,18 @@
+.feedback._full
+	form.feedback__form._full(action="")
+		p.feedback__title Получить бесплатную консультацию
+		span.feedback__item-title Имя*
+		input.feedback__item-input(type="text" required)
+		span.feedback__item-title Телефон*
+		input.feedback__item-input(type="tel" required)
+		span.feedback__item-title Комментарий
+		.textarea.custom-scroll_container
+			textarea.feedback__item-textarea.custom-scroll_inner
+			.custom-scroll_bar-y
+		label.feedback__agreement
+			input(type="checkbox")/
+			span Я согласен с условиями политики конфиденциальности 
+				a.feedback__agreement-link(href="#" target="_blank") условия политики конфиденциальности
+		p.feedback__submit
+			button.feedback__btn.btn.btn__full(type="submit") Заказать консультацию
+	.feedback__phone
